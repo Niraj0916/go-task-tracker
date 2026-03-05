@@ -36,6 +36,7 @@ func main() {
 
 	fmt.Println("1. Add Task")
 	fmt.Println("2. View Tasks")
+	fmt.Print("3. Exit")
 
 	fmt.Scan(&choice)
 
@@ -51,6 +52,9 @@ func main() {
 
 		viewTasks()
 
+	} else if choice == 3 {
+
+		fmt.Println("Exiting program")
 	} else {
 
 		fmt.Println("Invalid option")
